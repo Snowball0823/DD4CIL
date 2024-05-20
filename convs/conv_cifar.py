@@ -1,8 +1,3 @@
-'''
-For MEMO implementations of CIFAR-ConvNet
-Reference:
-https://github.com/wangkiw/ICLR23-MEMO/blob/main/convs/conv_cifar.py
-'''
 import torch
 import torch.nn as nn
 import torch.nn.functional as F

@@ -321,23 +321,12 @@ def _get_idata(dataset_name):
 
 
 def pil_loader(path):
-    """
-    Ref:
-    https://pytorch.org/docs/stable/_modules/torchvision/datasets/folder.html#ImageFolder
-    """
-    # open path as file to avoid ResourceWarning (https://github.com/python-pillow/Pillow/issues/835)
     with open(path, "rb") as f:
         img = Image.open(f)
         return img.convert("RGB")
 
 
 def accimage_loader(path):
-    """
-    Ref:
-    https://pytorch.org/docs/stable/_modules/torchvision/datasets/folder.html#ImageFolder
-    accimage is an accelerated Image loader and preprocessor leveraging Intel IPP.
-    accimage is available on conda-forge.
-    """
     import accimage
 
     try:
@@ -348,10 +337,6 @@ def accimage_loader(path):
 
 
 def default_loader(path):
-    """
-    Ref:
-    https://pytorch.org/docs/stable/_modules/torchvision/datasets/folder.html#ImageFolder
-    """
     from torchvision import get_image_backend
 
     if get_image_backend() == "accimage":

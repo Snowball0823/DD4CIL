@@ -1,7 +1,3 @@
-'''
-Reference:
-https://github.com/hshustc/CVPR19_Incremental_Learning/blob/master/cifar100-class-incremental/modified_linear.py
-'''
 import math
 import torch
 from torch import nn
@@ -9,10 +5,6 @@ from torch.nn import functional as F
 
 
 class SimpleLinear(nn.Module):
-    '''
-    Reference:
-    https://github.com/pytorch/pytorch/blob/master/torch/nn/modules/linear.py
-    '''
     def __init__(self, in_features, out_features, bias=True):
         super(SimpleLinear, self).__init__()
         self.in_features = in_features

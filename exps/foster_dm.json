@@ -6,7 +6,7 @@
     "num_selection":10,
     "fixed_memory": true,
     "shuffle": true,
-    "init_cls": 100,
+    "init_cls": 10,
     "increment": 10,
     "model_name": "foster_dm",
     "convnet_type": "resnet18",

@@ -21,7 +21,6 @@ from dd_algorithms.utils import DiffAugment,ParamDiffAug,get_time,save_images
 EPSILON = 1e-8
 from torchvision import datasets, transforms
 from torch.utils.data import ConcatDataset
-# Please refer to https://github.com/G-U-N/ECCV22-FOSTER for the full source code to reproduce foster.
 T = 2
 EPSILON = 1e-8
 batch_size = 128

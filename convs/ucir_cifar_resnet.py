@@ -1,8 +1,3 @@
-'''
-Reference:
-https://github.com/khurramjaved96/incremental-learning/blob/autoencoders/model/resnet32.py
-https://github.com/hshustc/CVPR19_Incremental_Learning/blob/master/cifar100-class-incremental/modified_resnet_cifar.py
-'''
 import torch
 import torch.nn as nn
 import torch.nn.functional as F

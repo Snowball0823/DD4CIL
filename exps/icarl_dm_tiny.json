@@ -1,0 +1,20 @@
+{
+    "prefix": "sync_dm_10_inner_1_cat",
+    "dataset": "tinyimagenet200",
+    "memory_size": 4000,
+    "memory_per_class": 10,
+    "use_dd": true,
+    "inner_step": 1,
+    "fixed_memory": true,
+    "shuffle": true,
+    "init_cls": 20,
+    "increment": 20,
+    "model_name": "icarl_dm",
+    "convnet_type": "resnet18",
+    "device": ["3"],
+    "lr_img":1.0,
+    "seed": [1993],
+    "selection":"greedy",
+    "num_selection": 10,
+    "use_trajectory":true
+}

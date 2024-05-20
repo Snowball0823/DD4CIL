@@ -44,7 +44,6 @@ class DiffAugMethod(object):
         }
 
 
-    # We implement the following differentiable augmentation strategies based on the code provided in https://github.com/mit-han-lab/data-efficient-gans.
     def rand_scale(self, x):
         # x>1, max scale
         # sx, sy: (0, +oo), 1: orignial size, 0.5: enlarge 2 times

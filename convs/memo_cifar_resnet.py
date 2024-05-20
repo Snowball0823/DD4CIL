@@ -1,8 +1,3 @@
-'''
-For MEMO implementations of CIFAR-ResNet
-Reference:
-https://github.com/khurramjaved96/incremental-learning/blob/autoencoders/model/resnet32.py
-'''
 import math
 
 import torch

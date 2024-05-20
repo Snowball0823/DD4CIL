@@ -60,7 +60,7 @@ class iCaRL_CAFE(BaseLearner):
         self.selection = args["selection"]
         self.num_selection = args["num_selection"] 
         self.use_trajectory = args["use_trajectory"] 
-        self._network = IncrementalNet(args, pretrained=True)
+        self._network = IncrementalNet(args, True)
         self.dd = CAFE(args)
         self.dsa_param = ParamDiffAug()
         self.dsa_strategy = dsa_strategy

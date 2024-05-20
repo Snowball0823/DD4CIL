@@ -52,7 +52,7 @@ T = 2
 class iCaRL_Random(BaseLearner):
     def __init__(self, args):
         super().__init__(args)
-        self._network = IncrementalNet(args, False)
+        self._network = IncrementalNet(args, True)
 
     def after_task(self):
         self._old_network = self._network.copy().freeze()

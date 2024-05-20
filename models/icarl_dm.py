@@ -67,7 +67,7 @@ class iCaRL_DM(BaseLearner):
             args["convnet_type"],
         )
         self.datasets = args["dataset"]
-        self._network = IncrementalNet(args, pretrained=True)
+        self._network = IncrementalNet(args, True)
         self.dd = DistributionMatching(args)
         self.dsa_param = ParamDiffAug()
         self.dsa_strategy = dsa_strategy
